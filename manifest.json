@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Ali-img-upload",
+    "description": "Ali-img-upload is a chrome extension for uploading images to Aliyun OSS.",
+    "version": "1.0.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "all_urls"
+            ],
+            "js": [
+                "js/content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        
+    ]
+}
