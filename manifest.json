@@ -5,26 +5,29 @@
     "description": "Ali-img-upload is a chrome extension for uploading images to Aliyun OSS.",
     "version": "1.0.0",
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "js/background.js"
     },
     "content_scripts": [
         {
-          "matches": ["<all_urls>"],
-          "js": ["js/popup.js"]
+            "matches": ["https://filebroker.aliexpress.com/AliImgUpload"],
+             "js": ["js/popup.js"],
+             "run_at": "document_start"
         }
       ],
     "action": {
-        "default_popup": "popup.html",
+        
+        "default_title": "Ali图床",
         "default_icon": {
-          "48": "icons/icon48.png",
-          "128": "icons/icon128.png"
+          "48": "icons/icon48.png"
         }
+      },
+      "icons": {
+        "48": "icons/icon48.png"
       },
     "permissions": [
         "activeTab",
         "storage",
         "clipboardRead",
-        "<all_urls>"
-    ],
-    "host_permissions": ["<all_urls>"]
+        "tabs"
+    ]
 }
