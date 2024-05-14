@@ -58,10 +58,10 @@ function executeAfterPageCreation(){
         acceptedFiles: ".jpg,.jpeg,.gif,.bmp,.png",
         dictDefaultMessage: "拖拽图片到此处，或点击上传",
         success: function(file, response) {
-            showMessage('Upload successful!');
+            showMessage('上传成功！');
         },
         error: function(file, response) {
-            showMessage('Upload failed...');
+            showMessage('上传失败！');
         }
 
 });}
