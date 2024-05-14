@@ -2,22 +2,18 @@
 <html>
 <head>
     <title>Image Uploader</title>
-    <style>
-        .dropzone {
-            border: 2px dashed #ccc;
-            padding: 50px;
-            text-align: center;
-            margin: 20px;
-        }
-        .message {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dropzone.min.css">
 </head>
 <body>
-    <div class="dropzone" id="dropzone">Drop image here or click to upload</div>
+    <div class="container">
+        <h1 class="text-center mt-3">阿里图床上传</h1>
+    <div class="dropzone text-primary mt-5" id="dropzone"></div>
     <div class="message" id="message"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js"></script>
+</div>
     <script src="js/popup.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dropzone.min.js"></script>
 </body>
 </html>
