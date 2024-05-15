@@ -11,7 +11,7 @@
         {
             "matches": ["https://filebroker.aliexpress.com/AliImgUpload"],
              "js": ["js/popup.js","js/dropzone.min.js","js/bootstrap.min.js"],
-             "css": ["css/dropzone.min.css","css/bootstrap.min.css"],
+             "css": ["css/dropzone.min.css","css/bootstrap.min.css","css/style.css"],
              "run_at": "document_start"
         }
       ],

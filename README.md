@@ -1,5 +1,7 @@
 # Ali-img-upload
 Chrome/Firefox/Edge Extension阿里图床上传浏览器插件
+使用Aliexpress速卖通接口进行图片上传
+扩展不使用您的COOKIE仅用于图片上传，请放心使用。
 ## 安装
 ### Chrome/Edge
 1. 下载插件压缩包
@@ -13,3 +15,6 @@ Chrome/Firefox/Edge Extension阿里图床上传浏览器插件
 3. 点击`Load Temporary Add-on`
 4. 选择解压后的文件夹中的`manifest.json`文件
 5. 完成安装
+##使用 
+1、前往https://best.aliexpress.com/注册登录
+2、打开扩展即可自动获取COOKIE用于上传图片

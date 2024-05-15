@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Image Uploader</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dropzone.min.css">
 </head>
+
 <body>
     <div class="container">
         <h1 class="text-center mt-3">阿里图床上传</h1>
-    <div class="dropzone text-primary mt-5" id="dropzone"></div>
-    <div class="message" id="message"></div>
-</div>
-    <script src="js/popup.js"></script>
+        <div class="dropzone  mt-5 file-upload" id="dropzone"></div>
+    </div>
+    <!-- <div class="message" id="message"></div> -->
+    <div class="textarea-container">
+        <label for="styledTextarea">图片地址</label>
+        <textarea readonly id="styledTextarea" class="styled-textarea"></textarea>
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dropzone.min.js"></script>
+    <style>
+
+    </style>
 </body>
+
 </html>

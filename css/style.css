@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/fonts.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MyCustomFont'
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.file-upload {
+    border: 4px dashed #1FB264 !important;
+    color: #1FB264;
+}
+.file-upload:hover{
+    border: 4px solid #1FB264 !important;
+}
+
+/* styles.css */
+.textarea-container {
+    font-family: 'Arial', sans-serif;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.textarea-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.styled-textarea {
+    width: 100%;
+    height: 150px; /* 可以根据需要调整高度 */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* 添加圆角 */
+    outline: none; /* 移除默认轮廓 */
+    box-shadow: inset 0 1px 3px #ddd; /* 内部阴影效果 */
+    font-size: 16px;
+    resize:none;
+    line-height: 1.5; /* 添加行高 */
+    box-sizing: border-box; /* 确保边框和内边距不会增加总体宽度 */
+    background-color: #f9f9f9; /* 设置一个不同的背景色以表示不可编辑 */
+    transition: border-color 0.3s ease-in-out; /* 平滑的边框颜色过渡 */
+}
+
+.styled-textarea:focus {
+    border-color: #007bff; /* 聚焦时的边框颜色 */
+    box-shadow: inset 0 1px 2px rgba(0, 123, 255, 0.1); /* 聚焦时的阴影效果 */
+}
+
+.styled-textarea::placeholder {
+    color: #aaa; /* 输入框占位符文字颜色 */
+}
+
