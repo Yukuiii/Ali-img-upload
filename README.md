@@ -28,5 +28,5 @@
 
 ## 使用 
 
-1. 前往https://best.aliexpress.com/注册登录
+1. 前往https://aliexpress.com/  注册登录
 2. 打开扩展即可自动获取COOKIE用于上传图片
