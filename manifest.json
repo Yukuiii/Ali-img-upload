@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "AliImgBed-阿里图床",
+    "version": "1.0.0",
+    "description": "阿里图床",
+    "icons": {
+        "16": "icons/icon.png",
+        "19": "icons/icon.png",
+        "38": "icons/icon.png",
+        "48": "icons/icon.png",
+        "128": "icons/icon.png"
+    },
+    "action": {
+        "default_title": "AliImgBed",
+        "default_icon": "icons/icon.png"
+    },
+    "background": {
+        "service_worker": "background/service-worker.js"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "clipboardRead",
+        "tabs"
+    ],
+    "host_permissions": [],
+    "content_scripts": [{
+        "js": [
+            "content/content.js"
+        ],
+        "css": ["assets/content.css"],
+        "matches": [
+            "https://filebroker.aliexpress.com/AliImgUpload"
+        ],
+        "run_at": "document_start"
+    }]
+}
